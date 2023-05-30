@@ -111,6 +111,7 @@ body .row main.container section.calc-header .theme-selector .theme-selector-sli
 body .row main.container section.calc-header .theme-selector .theme-selector-slider .theme-slider .circle-theme-slider button {
   width: 0.9rem;
   height: 0.9rem;
+  border-radius: 50%;
 }
 body .row main.container section.calc-screen {
   max-width: 100%;
