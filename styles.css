@@ -106,6 +106,7 @@ body .row main.container section.calc-header .theme-selector .theme-selector-sli
   border: 0;
   border-radius: 50%;
   background-color: hsl(6, 63%, 50%);
+  color: hsl(6, 63%, 50%);
 }
 body .row main.container section.calc-screen {
   max-width: 100%;

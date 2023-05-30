@@ -185,6 +185,7 @@ sliderButton.forEach((button) => {
         )
       );
       equalsButton.style.backgroundColor = "";
+      equalsButton.style.color = "";
       Array.from(sliderButton).forEach(
         (button) => (
           (button.style.backgroundColor = ""), (button.style.color = "")
@@ -223,6 +224,7 @@ sliderButton.forEach((button) => {
       delRes[0].style.boxShadow = "hsl(185, 58%, 25%)";
       equalsButton.style.backgroundColor = "hsl(25, 98%, 40%)";
       equalsButton.style.boxShadow = "0 3px hsl(25, 99%, 27%)";
+      equalsButton.style.color = "white";
       Array.from(sliderButton).forEach(
         (button) => (
           (button.style.backgroundColor = "hsl(25, 98%, 40%)"),
