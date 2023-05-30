@@ -108,6 +108,10 @@ body .row main.container section.calc-header .theme-selector .theme-selector-sli
   background-color: hsl(6, 63%, 50%);
   color: hsl(6, 63%, 50%);
 }
+body .row main.container section.calc-header .theme-selector .theme-selector-slider .theme-slider .circle-theme-slider button {
+  width: 0.9rem;
+  height: 0.9rem;
+}
 body .row main.container section.calc-screen {
   max-width: 100%;
   height: 15%;

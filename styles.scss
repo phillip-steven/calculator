@@ -120,6 +120,10 @@ body {
                 border-radius: 50%;
                 background-color: $red-key-1;
                 color: $red-key-1;
+                button {
+                  width: 0.9rem;
+                  height: 0.9rem;
+                }
               }
             }
           }
