@@ -101,8 +101,8 @@ body .row main.container section.calc-header .theme-selector .theme-selector-sli
 }
 body .row main.container section.calc-header .theme-selector .theme-selector-slider .theme-slider .circle-theme-slider {
   cursor: pointer;
-  width: 1.2em;
-  height: 1.2em;
+  width: 16px;
+  height: 16px;
   border: 0;
   border-radius: 50%;
   background-color: hsl(6, 63%, 50%);
