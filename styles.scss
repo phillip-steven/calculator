@@ -114,15 +114,13 @@ body {
 
               .circle-theme-slider {
                 cursor: pointer;
-                width: 0.9rem;
-                height: 0.9rem;
+                width: 1.2em;
+                height: 1.2em;
                 border: 0;
                 border-radius: 50%;
                 background-color: $red-key-1;
                 color: $red-key-1;
                 button {
-                  width: 0.9rem;
-                  height: 0.9rem;
                   border-radius: 50%;
                 }
               }

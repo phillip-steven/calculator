@@ -101,16 +101,14 @@ body .row main.container section.calc-header .theme-selector .theme-selector-sli
 }
 body .row main.container section.calc-header .theme-selector .theme-selector-slider .theme-slider .circle-theme-slider {
   cursor: pointer;
-  width: 0.9rem;
-  height: 0.9rem;
+  width: 1.2em;
+  height: 1.2em;
   border: 0;
   border-radius: 50%;
   background-color: hsl(6, 63%, 50%);
   color: hsl(6, 63%, 50%);
 }
 body .row main.container section.calc-header .theme-selector .theme-selector-slider .theme-slider .circle-theme-slider button {
-  width: 0.9rem;
-  height: 0.9rem;
   border-radius: 50%;
 }
 body .row main.container section.calc-screen {
