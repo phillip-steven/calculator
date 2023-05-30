@@ -176,12 +176,16 @@ sliderButton.forEach((button) => {
       equalsButton.style.boxShadow = "";
       Array.from(numberButtons).forEach(
         (button) => (
-          (button.style.backgroundColor = ""), (button.style.color = "")
+          (button.style.backgroundColor = ""),
+          (button.style.boxShadow = ""),
+          (button.style.color = "")
         )
       );
       Array.from(operationButtons).forEach(
         (button) => (
-          (button.style.backgroundColor = ""), (button.style.color = "")
+          (button.style.backgroundColor = ""),
+          (button.style.boxShadow = ""),
+          (button.style.color = "")
         )
       );
       equalsButton.style.backgroundColor = "";
