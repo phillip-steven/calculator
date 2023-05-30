@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*=col-] {
+  float: left;
+  padding: 16px;
+}
+
+main.container,
+section,
+.keys-container,
+.theme-selector,
+.theme-selecor-slider,
+.theme-slider,
+.calc-screen-container,
+ul {
+  display: flex;
+}
+
+body {
+  z-index: 0;
+  background-color: hsl(222, 26%, 31%);
+  color: hsl(0, 0%, 100%);
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .row {
+  height: 90vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .row main.container {
+  border-radius: 1rem;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+body .row main.container section.calc-header {
+  max-width: 100%;
+  height: 10%;
+  align-items: center;
+  justify-content: space-between;
+}
+body .row main.container section.calc-header .theme-selector {
+  height: 50%;
+  width: 40%;
+  justify-content: space-between;
+}
+body .row main.container section.calc-header .theme-selector .theme-selector-header {
+  align-self: center;
+}
+body .row main.container section.calc-header .theme-selector .theme-selector-slider {
+  height: 100%;
+  width: 50%;
+}
+body .row main.container section.calc-header .theme-selector .theme-selector-slider ul {
+  width: 100%;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0.2rem;
+}
+body .row main.container section.calc-header .theme-selector .theme-selector-slider ul li {
+  font-size: 12px;
+  float: left;
+  text-align: center;
+}
+body .row main.container section.calc-header .theme-selector .theme-selector-slider ul li button {
+  color: hsl(6, 63%, 50%);
+}
+body .row main.container section.calc-header .theme-selector .theme-selector-slider .theme-slider {
+  width: 100%;
+  height: 70%;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 1rem;
+  align-items: center;
+}
+body .row main.container section.calc-header .theme-selector .theme-selector-slider .theme-slider ul {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+body .row main.container section.calc-header .theme-selector .theme-selector-slider .theme-slider .circle-theme-slider {
+  cursor: pointer;
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 0;
+  border-radius: 50%;
+  background-color: hsl(6, 63%, 50%);
+}
+body .row main.container section.calc-screen {
+  max-width: 100%;
+  height: 15%;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+body .row main.container section.calc-screen .calc-screen-container {
+  width: 90%;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+}
+body .row main.container section.calc-screen .calc-screen-container h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+body .row main.container section.calc-screen .calc-screen-container .current-operand {
+  font-size: 2rem;
+}
+body .row main.container section.calc-screen .calc-screen-container .previous-operand {
+  color: hsl(6, 63%, 50%);
+}
+body .row main.container section.calc-keys {
+  overflow: hidden;
+  max-width: 100%;
+  height: 70%;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+body .row main.container section.calc-keys .keys-container {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+body .row main.container section.calc-keys .keys-container [data-delete],
+body .row main.container section.calc-keys .keys-container [data-reset] {
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 3px hsl(222, 26%, 31%);
+}
+body .row main.container section.calc-keys .keys-container [data-equals] {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0 3px hsl(6, 70%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+body .row main.container section.calc-keys .keys-container button {
+  font-size: 1rem;
+  background-color: hsl(30, 25%, 89%);
+  border: none;
+  width: 20%;
+  height: 15%;
+  color: hsl(221, 14%, 31%);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  margin: 0 0.3rem;
+  box-shadow: 0px 3px hsl(26, 18%, 65%);
+}
+body .row main.container section.calc-keys .keys-container [data-reset],
+body .row main.container section.calc-keys .keys-container [data-equals] {
+  width: 43%;
+}
+body footer .attribution {
+  font-size: 0.5rem;
+}
+body footer .attribution a {
+  font-size: 0.5rem;
+}
+body footer div,
+body footer a {
+  font-size: 1rem;
+}
+
+[class*=col-] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

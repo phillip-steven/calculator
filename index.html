@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <div class="row">
+      <main class="container col-s-12">
+        <section class="calc-header">
+          <h1>calc</h1>
+          <div class="theme-selector">
+            <div class="theme-selector-header">
+              <h4>THEME</h4>
+            </div>
+            <div class="theme-selector-slider">
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+              <div class="theme-slider">
+                <ul>
+                  <li>
+                    <button data-slider class="circle-theme-slider">1</button>
+                  </li>
+                  <li>
+                    <button data-slider class="circle-theme-slider">2</button>
+                  </li>
+                  <li>
+                    <button data-slider class="circle-theme-slider">3</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="calc-screen">
+          <div class="calc-screen-container">
+            <div class="previous-operand">
+              <h2 data-previous-operand></h2>
+            </div>
+            <div class="current-operand">
+              <h2 data-current-operand></h2>
+            </div>
+          </div>
+        </section>
+        <section class="calc-keys">
+          <div class="keys-container">
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-delete>DEL</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation>+</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation>-</button>
+            <button data-number>.</button>
+            <button data-number>0</button>
+            <button data-operation>/</button>
+            <button data-operation>x</button>
+            <button data-reset>RESET</button>
+            <button data-equals>=</button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">I Putu Phillip Steven</a>.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
